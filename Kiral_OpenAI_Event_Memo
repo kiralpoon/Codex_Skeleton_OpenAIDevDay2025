@@ -1,3 +1,10 @@
+---
+codex:
+  ignore: true
+  reason: personal_memo
+---
+CODEx-IGNORE: true
+
 OpenAI Dev Day 2025
 Codex and AgentKit
 Author: Kiral Poon
@@ -28,8 +35,10 @@ network_access = true
 my-repo/
 ├─ AGENTS.md              # tells Codex when/how to use plans, tests, style, etc.
 ├─ .agent/
-│  └─ PLANS.md            # the ExecPlan spec the AGENTS.md points to
+━E └─ PLANS.md            # the ExecPlan spec the AGENTS.md points to
 ├─ src/                   # your code
 └─ tests/                 # your tests (optional but recommended)
 
-5. Start your project with this skeleton.
+5. Make sure you select gpt-5-codex medium for the agent while coding.
+
+6. Start your project with this skeleton.
