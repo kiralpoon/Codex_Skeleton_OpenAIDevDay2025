@@ -7,6 +7,8 @@ CODEx-IGNORE: true
 
 # OpenAI Dev Day 2025 - Event Memo
 
+# Codex IDE
+
 ## 1. Setup Checklist
 1. Install Codex into your IDE
    - Visual Studio Code
@@ -52,3 +54,14 @@ my-repo/
 - Start from this skeleton: [GitHub Repository](https://github.com/kiralpoon/Codex_Skeleton_OpenAIDevDay2025/)
 - Target outcome: launch the personal website.
 - Demo recap: [Video Walkthrough Demo at the event]()
+
+# AgentKit
+
+## 1. Agentkit
+- [Indroducing Agentkit]{https://openai.com/index/introducing-agentkit/}
+Agent Builder -> A visual agent workflow builder like Dify, n8n, Flowise and etc.
+Chatkit -> Embedded UI
+https://platform.openai.com/agent-builder
+
+## 2. Widget Studio
+https://widgets.chatkit.studio/
