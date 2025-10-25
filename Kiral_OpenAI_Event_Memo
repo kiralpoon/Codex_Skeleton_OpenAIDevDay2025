@@ -5,40 +5,51 @@ codex:
 ---
 CODEx-IGNORE: true
 
-OpenAI Dev Day 2025
-Codex and AgentKit
-Author: Kiral Poon
+# OpenAI Dev Day 2025 - Event Memo
 
-1. Install Codex to the IDE
-Visual Studio Code
-or 
-Cursor
-2. Change your layouts
+## Setup Checklist
+1. Install Codex into your IDE
+   - Visual Studio Code
+   - Cursor
+   - [Video Walkthrough Demo at the event]()
+2. Update your editor layouts to the event-ready configuration.
 
-3. Configuration File location
-The configuration file for Codex is located at ~/.codex/config.toml.
-the top right corner of the extension and then clicking Codex Settings > MCP Settings > Open config.toml. (The official doc is not the latest)
-The built-in web search tool to enable via C:\<path>\.codex\config.toml:1:
+## Configuration File Location
+The Codex configuration file lives at `~/.codex/config.toml`.
+
+Open it quickly from the extension by using **Codex Settings > MCP Settings > Open config.toml** (top-right of the extension panel). The official docs are out of date, so rely on this path.
+
+```toml
 [tools]
 web_search = true
+```
 
-If you decide to add a networked MCP server (search/fetch APIs, internal APIs).
-If you need the agent to fetch specific URLs or call external services directly.
-If you want to allow tooling that performs outbound HTTP.
+## MCP and Networked Tooling
+- Add networked MCP servers when you need search/fetch APIs or internal services.
+- Enable outbound HTTP only for trusted tooling.
+- Use the config snippet above to toggle built-in web search support.
 
-
+## Sandbox Settings Snippet
+```toml
 [sandbox_workspace_write]
 network_access = true
+```
 
-4. Agents.md 
-
+## Agents.md Quick Reference
+```
 my-repo/
-├─ AGENTS.md              # tells Codex when/how to use plans, tests, style, etc.
-├─ .agent/
-━E └─ PLANS.md            # the ExecPlan spec the AGENTS.md points to
-├─ src/                   # your code
-└─ tests/                 # your tests (optional but recommended)
+|- AGENTS.md              # tells Codex when/how to use plans, tests, style, etc.
+|- .agent/
+|  \- PLANS.md            # ExecPlan spec referenced by AGENTS.md
+|- src/                   # your code
+\- tests/                 # optional but recommended
+```
 
-5. Make sure you select gpt-5-codex medium for the agent while coding.
+## Agent Model Choice
+- Select `gpt-5-codex` (medium) for coding tasks.
+- If you accidentally choose `gpt-5`, expect degraded PowerShell support and trouble editing `Agents.md`.
 
-6. Start your project with this skeleton.
+## Project Kickoff Links
+- Start from this skeleton: [GitHub Repository](https://github.com/kiralpoon/Codex_Skeleton_OpenAIDevDay2025/)
+- Target outcome: launch the personal website.
+- Demo recap: [Video Walkthrough Demo at the event]()
