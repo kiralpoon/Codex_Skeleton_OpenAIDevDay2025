@@ -32,3 +32,4 @@ my-repo/
 ├─ src/                   # your code
 └─ tests/                 # your tests (optional but recommended)
 
+5. Start your project with this skeleton.
