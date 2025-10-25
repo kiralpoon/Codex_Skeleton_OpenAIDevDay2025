@@ -9,7 +9,7 @@ OpenAI Dev Day 2025
 Codex and AgentKit
 Author: Kiral Poon
 
-1. How to install Codex to the IDE
+1. Install Codex to the IDE
 Visual Studio Code
 or 
 Cursor
@@ -23,7 +23,7 @@ The built-in web search tool to enable via C:\<path>\.codex\config.toml:1:
 web_search = true
 
 If you decide to add a networked MCP server (search/fetch APIs, internal APIs).
-Ig you need the agent to fetch specific URLs or call external services directly.
+If you need the agent to fetch specific URLs or call external services directly.
 If you want to allow tooling that performs outbound HTTP.
 
 
